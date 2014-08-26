@@ -5,8 +5,8 @@
 #
 
 name "backup"
-maintainer "CHANGE ME"
-homepage "https://CHANGE-ME.com"
+maintainer "Jeremy Olliver"
+homepage "https://github.com/jeremyolliver/omnibus-backup"
 
 # Defaults to C:/backup on Windows
 # and /opt/backup on all other platforms
@@ -19,7 +19,7 @@ build_iteration 1
 dependency "preparation"
 
 # backup dependencies/components
-# dependency "somedep"
+dependency "backup"
 
 # Version manifest file
 dependency "version-manifest"
