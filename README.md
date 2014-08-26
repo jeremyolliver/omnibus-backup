@@ -3,6 +3,11 @@ backup Omnibus project
 This project creates full-stack platform-specific packages for
 `backup`!
 
+Install the packages built with this project from the releases page: https://github.com/jeremyolliver/omnibus-backup/releases Tag numbers will match with the version numbers of the backup gem.
+
+How to build packages
+=====================
+
 Installation
 ------------
 You must have a sane Ruby 1.9+ environment with Bundler installed. Ensure all
@@ -85,14 +90,14 @@ liking, you can bring up an individual build environment using the `kitchen`
 command.
 
 ```shell
-$ bin/kitchen converge ubuntu-1204
+$ bin/kitchen converge default-ubuntu-1204
 ```
 
 Then login to the instance and build the project as described in the Usage
 section:
 
 ```shell
-$ bundle exec kitchen login ubuntu-1204
+$ bundle exec kitchen login default-ubuntu-1204
 [vagrant@ubuntu...] $ cd backup
 [vagrant@ubuntu...] $ bundle install
 [vagrant@ubuntu...] $ ...
